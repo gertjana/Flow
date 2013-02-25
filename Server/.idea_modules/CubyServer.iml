@@ -39,6 +39,17 @@
     <orderEntry type="library" name="SBT: io.spray:spray-json_2.9.2:1.2.3" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe.akka:akka-actor:2.0.4" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe:config:0.3.1" level="project" />
+    <orderEntry type="library" name="SBT: org.mongodb:casbah-commons_2.9.2:2.5.0" level="project" />
+    <orderEntry type="library" name="SBT: com.github.nscala-time:nscala-time_2.9.2:0.2.0" level="project" />
+    <orderEntry type="library" name="SBT: joda-time:joda-time:2.1" level="project" />
+    <orderEntry type="library" name="SBT: org.joda:joda-convert:1.2" level="project" />
+    <orderEntry type="library" name="SBT: org.specs2:specs2_2.9.2:1.12.2" level="project" />
+    <orderEntry type="library" name="SBT: org.specs2:specs2-scalaz-core_2.9.2:6.0.1" level="project" />
+    <orderEntry type="library" name="SBT: org.slf4j:slf4j-api:1.6.0" level="project" />
+    <orderEntry type="library" name="SBT: org.mongodb:mongo-java-driver:2.10.1" level="project" />
+    <orderEntry type="library" name="SBT: org.mongodb:casbah-core_2.9.2:2.5.0" level="project" />
+    <orderEntry type="library" name="SBT: org.mongodb:casbah-query_2.9.2:2.5.0" level="project" />
+    <orderEntry type="library" name="SBT: org.mongodb:casbah-gridfs_2.9.2:2.5.0" level="project" />
   </component>
 </module>
 

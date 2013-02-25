@@ -2,7 +2,7 @@ package net.addictivesoftware.cuby.server
 
 import akka.actor.{ActorSystem, Props}
 import spray.can.server.SprayCanHttpServerApp
-
+import com.mongodb.casbah.Imports._
 
 object Main extends App with SprayCanHttpServerApp {
 

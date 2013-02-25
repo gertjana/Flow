@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2a7c7e1-032d-416e-98d1-8ad1b34e774f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/.idea_modules/CubyServer.iml" afterPath="$PROJECT_DIR$/../Server/.idea_modules/CubyServer.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/src/main/scala/net/addictivesoftware/cuby/server/Main.scala" afterPath="$PROJECT_DIR$/../Server/src/main/scala/net/addictivesoftware/cuby/server/Main.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/src/main/scala/net/addictivesoftware/cuby/server/RestService.scala" afterPath="$PROJECT_DIR$/../Server/src/main/scala/net/addictivesoftware/cuby/server/RestService.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/build.sbt" afterPath="$PROJECT_DIR$/../Server/build.sbt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../Server/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" />
     </list>
     <ignored path="Client.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.scala" changelist="c2a7c7e1-032d-416e-98d1-8ad1b34e774f" time="1361543969070" ignored="false" />
-    <file path="/SBT" changelist="c2a7c7e1-032d-416e-98d1-8ad1b34e774f" time="1361543977396" ignored="false" />
-    <file path="/Dummy.txt" changelist="c2a7c7e1-032d-416e-98d1-8ad1b34e774f" time="1361537758544" ignored="false" />
+    <file path="/Main.scala" changelist="c2a7c7e1-032d-416e-98d1-8ad1b34e774f" time="1361802499203" ignored="false" />
+    <file path="/SBT" changelist="c2a7c7e1-032d-416e-98d1-8ad1b34e774f" time="1361802521955" ignored="false" />
+    <file path="/Dummy.txt" changelist="c2a7c7e1-032d-416e-98d1-8ad1b34e774f" time="1361802557515" ignored="false" />
+    <file path="/RestService.scala" changelist="c2a7c7e1-032d-416e-98d1-8ad1b34e774f" time="1361801238459" ignored="false" />
+    <file path="$PROJECT_DIR$/../Server/src/main/scala/net/addictivesoftware/cuby/server/objects/Player.scala" changelist="c2a7c7e1-032d-416e-98d1-8ad1b34e774f" time="1361802064649" ignored="false" />
+    <file path="/build.sbt" changelist="c2a7c7e1-032d-416e-98d1-8ad1b34e774f" time="1361802434496" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -357,7 +366,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
