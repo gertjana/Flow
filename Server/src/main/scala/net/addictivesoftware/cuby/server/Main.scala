@@ -5,6 +5,9 @@ import spray.can.server.SprayCanHttpServerApp
 import com.mongodb.casbah.Imports._
 
 object Main extends App with SprayCanHttpServerApp {
+  val host = "localhost"
+  val port = 27017
+  val mongo = MongoConnection(host,port)
 
   // the handler actor replies to incoming HttpRequests
   val handler = system.actorOf(Props[RestService])
