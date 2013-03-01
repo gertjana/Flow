@@ -13,7 +13,8 @@ resolvers ++= Seq(
     "Typesafe" at "http://repo.typesafe.com/typesafe/releases/",
     "Novus" at "http://repo.novus.com/releases/",
     "Novus Snapshots" at "http://repo.novus.com/snapshots/",
-    "Sonatype" at "https://oss.sonatype.org/content/groups/scala-tools/"
+    "Scala Tools" at "https://oss.sonatype.org/content/groups/scala-tools/",
+    "Sonatype" at "http://oss.sonatype.org/content/repositories/releases"
 )
 
 libraryDependencies ++= Seq(
@@ -23,5 +24,7 @@ libraryDependencies ++= Seq(
     "io.spray" % "spray-routing" % "1.0-M7",
     "io.spray" %  "spray-json_2.9.2" % "1.2.3",
     "com.typesafe.akka" % "akka-actor" % "2.0.4",
-    "com.novus" %% "salat-core" % "0.0.8-SNAPSHOT"
+    "com.novus" %% "salat-core" % "0.0.8-SNAPSHOT",
+    "io.spray" % "spray-testkit" % "1.0-M7" % "test",
+    "org.specs2" %% "specs2" % "1.9" % "test"
 )

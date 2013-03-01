@@ -3,6 +3,8 @@ package net.addictivesoftware.cuby.server
 import objects.{Game, Player}
 import spray.json.{JsValue, JsString, JsonFormat}
 import com.mongodb.casbah.commons.TypeImports.ObjectId
+
+//import implicit base json formats
 import spray.json.DefaultJsonProtocol._
 
 object MyJsonProtocol {

@@ -13,8 +13,6 @@ case class Game(@Key("_id") _id:ObjectId = new ObjectId(), name:String, host:Pla
 //DAO
 object GameDAO extends SalatDAO[Game, Int](collection = MongoConnection()("cuby-data")("games"))
 
-
-
 object GameCRUD {
 
   def insert(game:Game):Option[Int] = {
@@ -25,15 +23,10 @@ object GameCRUD {
    GameDAO.remove(game)
   }
 
- def deleteById(id:String):Boolean = {
+ def deleteById(id:String) = {
   getById(id) match {
-    case Some(game) => {
-      delete(game)
-      true
-    }
-    case _ => {
-      false
-    }
+    case Some(game) => { delete(game) }
+    case _ => {}
   }
  }
 

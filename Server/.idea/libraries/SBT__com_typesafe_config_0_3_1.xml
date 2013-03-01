@@ -3,7 +3,11 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe/config/bundles/config-0.3.1.jar!/" />
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe/config/docs/config-0.3.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe/config/srcs/config-0.3.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

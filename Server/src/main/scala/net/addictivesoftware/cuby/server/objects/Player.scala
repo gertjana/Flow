@@ -25,15 +25,10 @@ object PlayerCRUD {
     PlayerDAO.remove(player)
   }
 
-  def deleteById(id:String):Boolean = {
+  def deleteById(id:String) = {
     getById(id) match {
-      case Some(player) => {
-        delete(player)
-        true
-      }
-      case _ => {
-        false
-      }
+      case Some(player) => {delete(player)}
+      case _ => {}
     }
   }
 
