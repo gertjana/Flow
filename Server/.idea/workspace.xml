@@ -2,28 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Client/.idea/ant.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Client/.idea_modules/CubyClient-build.iml" afterPath="$PROJECT_DIR$/../Client/.idea_modules/CubyClient-build.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Client/.idea_modules/CubyClient.iml" afterPath="$PROJECT_DIR$/../Client/.idea_modules/CubyClient.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Client/.idea/IdeaProject.iml" afterPath="$PROJECT_DIR$/../Client/.idea/IdeaProject.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Client/src/main/scala/net/addictivesoftware/cuby/client/Main.scala" afterPath="$PROJECT_DIR$/../Client/src/main/scala/net/addictivesoftware/cuby/client/Main.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/MyJsonProtocol.scala" afterPath="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/MyJsonProtocol.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Client/.idea/libraries/SBT__org_scala_lang_scala_library_2_9_2.xml" afterPath="$PROJECT_DIR$/../Client/.idea/libraries/SBT__org_scala_lang_scala_library_2_9_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Client/.idea/libraries/SBT__org_scala_lang_scala_swing_2_9_2.xml" afterPath="$PROJECT_DIR$/../Client/.idea/libraries/SBT__org_scala_lang_scala_swing_2_9_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Client/.idea/libraries/SBT__scala_2_9_2.xml" afterPath="$PROJECT_DIR$/../Client/.idea/libraries/SBT__scala_2_9_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Client/.idea/misc.xml" afterPath="$PROJECT_DIR$/../Client/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Client/.idea/modules.xml" afterPath="$PROJECT_DIR$/../Client/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Server.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/CubyServer-build.iml" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1361448738251" ignored="false" />
     <file path="/Main.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1361802499203" ignored="false" />
-    <file path="/build.sbt" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362070634068" ignored="false" />
-    <file path="/SBT" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362151303035" ignored="false" />
+    <file path="/build.sbt" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362260275013" ignored="false" />
+    <file path="/SBT" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362328640040" ignored="false" />
     <file path="/DemoService.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1361462630910" ignored="false" />
     <file path="/SprayCanHttpServerApp.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1361460089306" ignored="false" />
-    <file path="/RestService.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362071136646" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/IdeaProject.iml" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1361461352646" ignored="false" />
+    <file path="/RestService.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362260756503" ignored="false" />
     <file path="E:/Sources/SmartTarget_TFS/Main/build.xml" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1361527198961" ignored="false" />
     <file path="E:/Sources/SmartTarget_TFS/Main/smarttarget_core/build.xml" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1361527198961" ignored="false" />
-    <file path="/Dummy.txt" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362070764012" ignored="false" />
-    <file path="/Player.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1361963300956" ignored="false" />
-    <file path="/fragment.java" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362133760798" ignored="false" />
+    <file path="/Dummy.txt" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362426360950" ignored="false" />
+    <file path="/Player.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362253979625" ignored="false" />
+    <file path="/fragment.java" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362253112658" ignored="false" />
     <file path="/a.dummy" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362133785732" ignored="false" />
-    <file path="/Game.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362055146076" ignored="false" />
+    <file path="/Game.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362254029002" ignored="false" />
     <file path="/ObjectsJsonProtocol.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362043270714" ignored="false" />
     <file path="/MyJsonProtocol.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362066173268" ignored="false" />
-    <file path="/TestRestService.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362146493338" ignored="false" />
+    <file path="/TestRestService.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362260058754" ignored="false" />
     <file path="/pom.xml" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362140355503" ignored="false" />
     <file path="$PROJECT_DIR$/../../JiraEpicUPdate/pom.xml" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362141114927" ignored="false" />
     <file path="$PROJECT_DIR$/../../JiraEpicUPdate/src/main/java/Main.java" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362142062685" ignored="false" />
@@ -79,6 +90,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -88,77 +100,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="TestRestService.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/net/addictivesoftware/cuby/server/TestRestService.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="95" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Main.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="218" selection-end="302" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RestService.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/RestService.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="66" selection-start="2392" selection-end="2392" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.sbt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.sbt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="73" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestRestService.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/net/addictivesoftware/cuby/server/TestRestService.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="118" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.36755952">
-              <folding>
-                <element signature="e#44#98#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Specs2Interface.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/io.spray/spray-testkit/srcs/spray-testkit-1.0-M7-sources.jar!/spray/testkit/Specs2Interface.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="6" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyJsonProtocol.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/MyJsonProtocol.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="70" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#43#72#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestBuilding.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/io.spray/spray-httpx/srcs/spray-httpx-1.0-M7-sources.jar!/spray/httpx/RequestBuilding.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="9" selection-start="1631" selection-end="1631" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Actor.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor/srcs/akka-actor-2.0.4-sources.jar!/akka/actor/Actor.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="9" selection-start="4518" selection-end="4521" vertical-scroll-proportion="0.0">
+            <state line="17" column="42" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -167,7 +121,16 @@
       <file leaf-file-name="Player.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/objects/Player.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="100" selection-start="294" selection-end="393" vertical-scroll-proportion="0.0">
+            <state line="39" column="28" selection-start="964" selection-end="978" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyJsonProtocol.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/MyJsonProtocol.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="60" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -176,7 +139,16 @@
       <file leaf-file-name="Game.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/objects/Game.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0">
+            <state line="34" column="0" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestService.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/RestService.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="129" selection-start="352" selection-end="352" vertical-scroll-proportion="-0.50595236">
               <folding />
             </state>
           </provider>
@@ -206,12 +178,12 @@
         <option value="$PROJECT_DIR$/../Client/src/main/scala/net/addictivesoftware/cuby/client/Main.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/Main.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/objects/ObjectsJsonProtocol.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/MyJsonProtocol.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/objects/Player.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/objects/Game.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/net/addictivesoftware/cuby/server/TestRestService.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/RestService.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/net/addictivesoftware/cuby/server/TestRestService.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/MyJsonProtocol.scala" />
       </list>
     </option>
   </component>
@@ -219,7 +191,9 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
     <option name="height" value="1176" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -229,11 +203,13 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -249,7 +225,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -267,9 +242,152 @@
               <option name="myItemId" value="Server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestService.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="objects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Player.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="objects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,24 +402,27 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Specs2.TestRestService">
     <configuration default="false" name="Client" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Client" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Client" />
+      <module name="" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -311,6 +432,13 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console">
+      <module name="" />
+      <setting name="vmparams4" value="-Djline.terminal=NONE" />
+      <setting name="consoleArgs" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -347,6 +475,34 @@
       <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -398,20 +554,41 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.Client" />
+    <configuration default="false" name="TestRestService" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="CubyServer" />
+      <setting name="path" value="net.addictivesoftware.cuby.server.RestServiceSpec" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="true" action="test:compile" runInCurrentModule="true" />
+      </method>
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Specs2.TestRestService" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Client" />
     </list>
     <recent_temporary>
       <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Application.Client" />
       </list>
     </recent_temporary>
-    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -430,16 +607,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1176" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29301867" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31501472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40019667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -450,10 +627,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.67256635" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33907428" sideWeight="0.7069813" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3361793" sideWeight="0.6849853" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32940018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32940018" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -519,113 +697,99 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.ivy2/cache/io.spray/spray-json_2.9.2/srcs/spray-json_2.9.2-1.2.3-sources.jar!/spray/json/BasicFormats.scala">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.specs2/specs2_2.9.1/srcs/specs2_2.9.1-1.9-sources.jar!/org/specs2/matcher/MustExpectable.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="102" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.41582733" />
+        <state line="13" column="0" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/io.spray/spray-json_2.9.2/srcs/spray-json_2.9.2-1.2.3-sources.jar!/spray/json/CollectionFormats.scala">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_09/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="6" selection-start="695" selection-end="695" vertical-scroll-proportion="0.097841725" />
+        <state line="36" column="0" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/io.spray/spray-json_2.9.2/srcs/spray-json_2.9.2-1.2.3-sources.jar!/spray/json/DefaultJsonProtocol.scala">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.9.1-sources.jar!/scala/Product.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="19" selection-start="845" selection-end="845" vertical-scroll-proportion="0.24460432" />
+        <state line="19" column="0" selection-start="912" selection-end="912" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/objects/Game.scala">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.specs2/specs2_2.9.1/srcs/specs2_2.9.1-1.9-sources.jar!/org/specs2/matcher/MatchResult.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="114" column="110" selection-start="5096" selection-end="5096" vertical-scroll-proportion="0.24094488" />
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor/srcs/akka-actor-2.0.4-sources.jar!/akka/actor/Actor.scala">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.specs2/specs2_2.9.1/srcs/specs2_2.9.1-1.9-sources.jar!/org/specs2/matcher/BeHaveMatchers.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="9" selection-start="4518" selection-end="4521" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="18" column="0" selection-start="430" selection-end="430" vertical-scroll-proportion="0.48188975" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.specs2/specs2_2.9.1/srcs/specs2_2.9.1-1.9-sources.jar!/org/specs2/matcher/Expectable.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="73" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.specs2/specs2_2.9.1/srcs/specs2_2.9.1-1.9-sources.jar!/org/specs2/matcher/Matchers.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="6" selection-start="666" selection-end="666" vertical-scroll-proportion="0.56258994">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.specs2/specs2_2.9.1/srcs/specs2_2.9.1-1.9-sources.jar!/org/specs2/Specification.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="17" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.6086331">
-          <folding />
-        </state>
+        <state line="43" column="0" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.44054878" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/io.spray/spray-testkit/srcs/spray-testkit-1.0-M7-sources.jar!/spray/testkit/RouteTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="8" selection-start="2768" selection-end="2768" vertical-scroll-proportion="0.3323741">
+        <state line="46" column="62" selection-start="1476" selection-end="1523" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/io.spray/spray-httpx/srcs/spray-httpx-1.0-M7-sources.jar!/spray/httpx/RequestBuilding.scala">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.9.1-sources.jar!/scala/Option.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="9" selection-start="1631" selection-end="1631" vertical-scroll-proportion="0.0">
+        <state line="260" column="17" selection-start="9053" selection-end="9053" vertical-scroll-proportion="0.6112805" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/objects/Player.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="28" selection-start="964" selection-end="978" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/objects/Game.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="218" selection-end="302" vertical-scroll-proportion="0.0">
+        <state line="17" column="42" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/io.spray/spray-testkit/srcs/spray-testkit-1.0-M7-sources.jar!/spray/testkit/Specs2Interface.scala">
+    <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="6" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="49" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/objects/Player.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/net/addictivesoftware/cuby/server/TestRestService.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="100" selection-start="294" selection-end="393" vertical-scroll-proportion="0.0">
+        <state line="11" column="95" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/MyJsonProtocol.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="70" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#43#72#0" expanded="true" />
-          </folding>
+        <state line="19" column="60" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.weiglewilczek.slf4s/slf4s_2.9.1/srcs/slf4s_2.9.1-1.0.7-sources.jar!/logger.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="13" selection-start="811" selection-end="817" vertical-scroll-proportion="0.17708333">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/RestService.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="66" selection-start="2392" selection-end="2392" vertical-scroll-proportion="0.0">
+        <state line="10" column="129" selection-start="352" selection-end="352" vertical-scroll-proportion="-0.50595236">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/net/addictivesoftware/cuby/server/TestRestService.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="118" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.36755952">
-          <folding>
-            <element signature="e#44#98#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
