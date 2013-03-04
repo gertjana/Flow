@@ -8,10 +8,10 @@ import com.mongodb.casbah.commons.TypeImports.ObjectId
 import spray.json.DefaultJsonProtocol._
 
 object MyJsonProtocol {
-  implicit val objectIdFormat = new JsonFormat[ObjectId] {
+/*  implicit val objectIdFormat = new JsonFormat[ObjectId] {
     def write(o:ObjectId) = JsString(o.toString)
     def read(value:JsValue) = new ObjectId(value.toString())
-  }
+  }*/
   implicit val PlayerFormat = jsonFormat(Player, "_id", "name", "email", "age")
   implicit val GameFormat = jsonFormat(Game, "_id", "name", "host", "players")
 

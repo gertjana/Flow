@@ -11,7 +11,7 @@ import com.mongodb.casbah.commons.TypeImports.ObjectId
 import scala.Some
 
 //model
-case class Player(@Key("_id") _id:ObjectId = new ObjectId(), name:String, email:String, age:Int) {}
+case class Player(@Key("_id") _id:String = new ObjectId().toString, name:String, email:String, age:Int) {}
 
 //DAO
 object PlayerDAO extends SalatDAO[Player, Int](collection = MongoConnection()("cuby-data")("players"))
@@ -33,12 +33,12 @@ object PlayerCRUD {
   }
 
   def update(id: String, player:Player) = {
-    PlayerDAO.update(MongoDBObject("_id" -> new ObjectId(id)), grater[Player].asDBObject(player))
+    PlayerDAO.update(MongoDBObject("_id" -> id), grater[Player].asDBObject(player))
 
   }
 
   def getById(id:String):Option[Player] = {
-    PlayerDAO.find(MongoDBObject("_id" -> new ObjectId(id)))
+    PlayerDAO.find(MongoDBObject("_id" -> id))
       .limit(1)
       .toList
       .headOption

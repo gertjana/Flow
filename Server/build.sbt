@@ -26,5 +26,6 @@ libraryDependencies ++= Seq(
     "com.typesafe.akka" % "akka-actor" % "2.0.4",
     "com.novus" %% "salat-core" % "0.0.8-SNAPSHOT",
     "io.spray" % "spray-testkit" % "1.0-M7" % "test",
-    "org.specs2" %% "specs2" % "1.9" % "test"
+    "org.specs2" %% "specs2" % "1.9" % "test",
+    "com.weiglewilczek.slf4s" %% "slf4s" % "1.0.7"
 )

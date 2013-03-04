@@ -8,7 +8,7 @@ import com.novus.salat.global._
 
 import com.mongodb.casbah.commons.TypeImports.ObjectId
 
-case class Game(@Key("_id") _id:ObjectId = new ObjectId(), name:String, host:Player, players:List[Player]) {}
+case class Game(@Key("_id") _id:String = new ObjectId().toString, name:String, host:Player, players:List[Player]) {}
 
 //DAO
 object GameDAO extends SalatDAO[Game, Int](collection = MongoConnection()("cuby-data")("games"))
@@ -31,12 +31,11 @@ object GameCRUD {
  }
 
  def update(id: String, game:Game) = {
-  GameDAO.update(MongoDBObject("_id" -> new ObjectId(id)), grater[Game].asDBObject(game))
-
+  GameDAO.update(MongoDBObject("_id" -> id), grater[Game].asDBObject(game))
  }
 
  def getById(id:String):Option[Game] = {
-  GameDAO.find(MongoDBObject("_id" -> new ObjectId(id)))
+  GameDAO.find(MongoDBObject("_id" -> id))
     .limit(1)
     .toList
     .headOption
