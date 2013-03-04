@@ -7,7 +7,7 @@ object Client extends SimpleSwingApplication {
   def maxHeight = 480
   def HeightInputPanel = 40
   def widthButton = 80
-  def initXPos = 320
+  def initXPos = 320                                                                                                        +
   def initYPos = 260
 
   val inputField = new JTextField()
