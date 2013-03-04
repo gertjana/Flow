@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/net/addictivesoftware/cuby/server/TestRestService.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea_modules/CubyServer.iml" afterPath="$PROJECT_DIR$/.idea_modules/CubyServer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/objects/Game.scala" afterPath="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/objects/Game.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/MyJsonProtocol.scala" afterPath="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/MyJsonProtocol.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/objects/Player.scala" afterPath="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/objects/Player.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/RestService.scala" afterPath="$PROJECT_DIR$/src/main/scala/net/addictivesoftware/cuby/server/RestService.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_config_0_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_config_0_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Server.iws" />
@@ -17,7 +9,7 @@
     <file path="/CubyServer-build.iml" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1361448738251" ignored="false" />
     <file path="/Main.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1361802499203" ignored="false" />
     <file path="/build.sbt" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362070634068" ignored="false" />
-    <file path="/SBT" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362136077980" ignored="false" />
+    <file path="/SBT" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362151303035" ignored="false" />
     <file path="/DemoService.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1361462630910" ignored="false" />
     <file path="/SprayCanHttpServerApp.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1361460089306" ignored="false" />
     <file path="/RestService.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362071136646" ignored="false" />
@@ -31,7 +23,7 @@
     <file path="/Game.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362055146076" ignored="false" />
     <file path="/ObjectsJsonProtocol.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362043270714" ignored="false" />
     <file path="/MyJsonProtocol.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362066173268" ignored="false" />
-    <file path="/TestRestService.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362136066355" ignored="false" />
+    <file path="/TestRestService.scala" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362146493338" ignored="false" />
     <file path="/pom.xml" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362140355503" ignored="false" />
     <file path="$PROJECT_DIR$/../../JiraEpicUPdate/pom.xml" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362141114927" ignored="false" />
     <file path="$PROJECT_DIR$/../../JiraEpicUPdate/src/main/java/Main.java" changelist="23d7b664-9e16-4aa5-ad6d-ad8fd8860320" time="1362142062685" ignored="false" />
@@ -126,7 +118,7 @@
       <file leaf-file-name="TestRestService.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/net/addictivesoftware/cuby/server/TestRestService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="108" selection-start="1634" selection-end="1634" vertical-scroll-proportion="0.56994045">
+            <state line="41" column="118" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.36755952">
               <folding>
                 <element signature="e#44#98#0" expanded="true" />
               </folding>
@@ -227,9 +219,7 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1920" />
     <option name="height" value="1176" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -440,7 +430,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1176" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -460,7 +450,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.67256635" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3361793" sideWeight="0.7069813" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33907428" sideWeight="0.7069813" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -632,7 +622,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/net/addictivesoftware/cuby/server/TestRestService.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="108" selection-start="1634" selection-end="1634" vertical-scroll-proportion="0.56994045">
+        <state line="41" column="118" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.36755952">
           <folding>
             <element signature="e#44#98#0" expanded="true" />
           </folding>
