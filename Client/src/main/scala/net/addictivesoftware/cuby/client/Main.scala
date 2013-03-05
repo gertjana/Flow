@@ -1,14 +1,17 @@
 import java.awt.BorderLayout
 import javax.swing._
+import scala.swing
+import scala.swing
+import scala.swing.event.ButtonClicked
 import swing._
 
 object Client extends SimpleSwingApplication {
-  def maxWidth = 640
-  def maxHeight = 480
-  def HeightInputPanel = 40
-  def widthButton = 80
-  def initXPos = 320                                                                                                        +
-  def initYPos = 260
+  def maxWidth:Int = 640
+  def maxHeight:Int = 480
+  def HeightInputPanel:Int = 40
+  def widthButton:Int = 80
+  def initXPos:Int = 320
+  def initYPos:Int = 260
 
   val inputField = new JTextField()
   inputField.setPreferredSize(new Dimension(maxWidth-widthButton,20))
@@ -20,10 +23,12 @@ object Client extends SimpleSwingApplication {
 
 
   def sendButton = {
-    val b = new Button("send") {
-      sendMessageToServer(inputField.getText())
-    }
+    val b = new Button("send")
     b.peer.setPreferredSize(new Dimension(widthButton,HeightInputPanel))
+    listenTo(b)
+    reactions += {
+      case ButtonClicked(`b`) => sendMessageToServer(inputField.getText())
+    }
     b.peer
   }
 
