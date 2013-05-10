@@ -14,6 +14,6 @@ object Main extends App with SprayCanHttpServerApp {
   //newHttpServer(restHandler) ! Bind(interface = "localhost", port = 8080)
 
   val flowHandler = system.actorOf(Props[FlowService])
-  newHttpServer(flowHandler) ! Bind(interface = "localhost", port = 9999)
+  newHttpServer(flowHandler) ! Bind(interface = "devgertjana.global.sdl.corp", port = 9999)
 
 }
