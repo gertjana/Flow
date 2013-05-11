@@ -1,6 +1,6 @@
 var bindCss = ".record-flow";
-var endPoint = "http://devgertjana.global.sdl.corp:9999/flow";
-var session = "no-session";
+var endPoint = "http://perth:9999/flow";
+var session = "nosession";
 
 $(document).ready(function() {
     $.ajax({
@@ -39,21 +39,33 @@ $(document).ready(function() {
 
 
     function handleGenericEvent(eventName, eventObject) {
-        var data = {
+        data = {
             url:                document.location.href,
             useragent:          navigator.userAgent,
             element:            eventObject.target.nodeName,
             value:              eventObject.target.value,
             text:               eventObject.textContent,
-            key:                eventObject.charCode || eventObject.keyCode
+            key:                eventObject.charCode || eventObject.keyCode,
             link:               eventObject.currentTarget.attributes.getNamedItem("href").textContent || eventObject.currentTarget.attributes.getNamedItem("src").textContent
         }
+
+        $.each(eventObject.currentTarget.attributes, function(i) {
+            var attribute = eventObject.currentTarget.attributes[i];
+            if (attribute.name.indexOf("data-")== 0) {
+                data[attribute.name] = attribute.value;
+            }
+        });
 
         $.ajax({
           type: "POST",
           url: endPoint + "/event/" + session + "/" + eventName,
           data: data,
-          success: success
+          success: function(data) {
+            if (console) console.log(data);
+          },
+          error: function(response, status, error) {
+            alert(status+": "+error);
+          }
         });
 
         function success(data) {
