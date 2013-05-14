@@ -41,6 +41,27 @@ trait FlowRoutingService extends HttpService with WebPages with SprayJsonSupport
         }
       }
     } ~
+    path ("\\w+.html".r) {filename => // serve static html files
+      get {
+        respondWithMediaType(`text/html`) {
+          getFromResource(filename)
+        }
+      }
+    } ~
+    path("js" / "[\\w\\.]+".r) { filename => // serve static javascript files
+      get {
+        respondWithMediaType(`application/javascript`) {
+          getFromResource("js/" + filename);
+        }
+      }
+    } ~
+    path("css" / "[\\w\\.]+".r) { filename => // server static css
+      get {
+        respondWithMediaType(`text/css`) {
+          getFromResource("css/" + filename);
+        }
+      }
+    } ~
     path("list") {    //list all events
       get {
         respondWithMediaType(`text/html`) {
@@ -49,32 +70,8 @@ trait FlowRoutingService extends HttpService with WebPages with SprayJsonSupport
           }
         }
       }
-    } ~
-    path("test.html") {
-      get {
-        respondWithMediaType(`text/html`) {
-          complete {
-            testHtml
-          }
-        }
-      }
-    } ~
-    path("js" / "[\\w\\.]+".r) { filename =>
-      get {
-        respondWithMediaType(`application/javascript`) {
-          val jsFile = getFromResource("js/" + filename);
-          jsFile
-        }
-      }
-    } ~
-    path("css" / "[\\w\\.]+".r) { filename =>
-      get {
-        respondWithMediaType(`text/css`) {
-          getFromResource("css/" + filename);
-        }
-      }
-    } ~
-    path("list" / "\\w+".r) { session =>    //list all events
+    } ~    
+    path("list" / "\\w+".r) { session =>    //list all events for a session id
       get {
         respondWithMediaType(`text/html`) {
           complete {

@@ -1,14 +1,15 @@
 var bindCss = ".record-flow";
-var endPoint = "http://perth:9999/flow";
+var endPoint = "http://devgertjana.global.sdl.corp:9999/flow";
 var session = "nosession";
 
 $(document).ready(function() {
+
     $.ajax({
         type: "GET",
         url: endPoint + "/getsession",
         success: function(data) {
            if (console) console.log("session: " + data)
-           session = data;        
+           session = data;
         },
         error: function(response, status, error) {
             alert(status+": "+error);
@@ -39,14 +40,14 @@ $(document).ready(function() {
 
 
     function handleGenericEvent(eventName, eventObject) {
-        data = {
+        var data = {
             url:                document.location.href,
             useragent:          navigator.userAgent,
             element:            eventObject.target.nodeName,
             value:              eventObject.target.value,
             text:               eventObject.textContent,
             key:                eventObject.charCode || eventObject.keyCode,
-            link:               eventObject.currentTarget.attributes.getNamedItem("href").textContent || eventObject.currentTarget.attributes.getNamedItem("src").textContent
+            link:               _getLink(eventObject)
         }
 
         $.each(eventObject.currentTarget.attributes, function(i) {
@@ -71,6 +72,16 @@ $(document).ready(function() {
         function success(data) {
             if (console) console.log(data);
         }
+    }
+
+    function _getLink(eventObject) {
+        if (eventObject.currentTarget.getAttribute("src")) {
+            return eventObject.currentTarget.getAttribute("src");
+        }
+        if (eventObject.currentTarget.getAttribute("href")) {
+            return eventObject.currentTarget.getAttribute("href");
+        }
+        return "";
     }
 
     function handleAggregatableEvent(eventName, eventObject) {

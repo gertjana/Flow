@@ -108,29 +108,4 @@ trait WebPages {
         </table>
       </body>
     </html>
-
-  /**
-   * test html
-   */
-  val testHtml =
-    <html>
-      <head>
-        <title>Test</title>
-        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-        <script src="js/flow.js"></script>
-      </head>
-      <body>
-        <p>I am only interested if the mouseover <span class="record-flow-mouseover">this element</span></p>
-        <form data="" class="record-flow-submit" action="" method="GET">
-          What is your name?<br/>
-          <input class="record-flow-keypress" type="text" />
-          <input type="submit" />
-          <input type="reset" />
-        </form>
-        <button name="Click me" class="record-flow-click">Click me</button>
-        this is a link <a href="#" class="record-flow-click">Going nowhere</a>
-      </body>
-    </html>
-
-
 }
