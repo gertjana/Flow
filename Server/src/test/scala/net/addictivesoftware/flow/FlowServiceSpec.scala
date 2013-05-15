@@ -1,4 +1,4 @@
-package net.addictivesoftware.cuby.server
+package net.addictivesoftware.flow
 
 /**
  * Created with IntelliJ IDEA.
@@ -7,6 +7,6 @@ package net.addictivesoftware.cuby.server
  * Time: 9:32 PM
  * To change this template use File | Settings | File Templates.
  */
-class FlowServiveSpec {
+class FlowServiceSpec {
 
 }

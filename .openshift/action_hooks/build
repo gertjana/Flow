@@ -4,7 +4,7 @@
 # before the deploy step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
 SBT_PATH=$OPENSHIFT_DATA_DIR/sbt
-SBT_DIR=$OPENSHIFT_DATA_DIR/Server/project
+SBT_DIR=$OPENSHIFT_DATA_DIR/Server
 IVY_DIR=$OPENSHIFT_DATA_DIR/.ivy
 cd $OPENSHIFT_DATA_DIR
 $SBT_PATH/bin/sbt -sbt-dir $SBT_DIR -ivy $IVY_DIR -mem 256 compile
