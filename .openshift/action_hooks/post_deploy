@@ -5,9 +5,6 @@
 # $OPENSHIFT_INTERNAL_IP:$OPENSHIFT_INTERNAL_IP
 
 #replace IP + PORT in Server/src/main/resources/flow.properties
-cd $OPENSHIFT_DATA_DIR
-echo pwd
-cat `ls -la`
+cd $OPENSHIFT_REPO_DIR
 sed 's/application-host=.*/application-host=$OPENSHIFT_INTERNAL_IP/' Server/src/main/resources/flow.properties 
 sed 's/application-port=.*/application-port=$OPENSHIFT_INTERNAL_PORT/' Server/src/main/resources/flow.properties
-cat Server/src/main/resources/flow.properties 
