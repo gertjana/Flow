@@ -5,14 +5,16 @@ import spray.routing.HttpService
 import spray.httpx.SprayJsonSupport
 import com.weiglewilczek.slf4s.Logging
 import scala.util.Random
-import spray.http.MediaTypes.{`text/html`, `application/javascript`, `text/css`}
+import spray.http.MediaTypes.{`text/html`, `application/javascript`, `text/css`, `application/json`}
 import net.addictivesoftware.flow.{WebPages, EventActor, RecordEvent}
-import net.addictivesoftware.flow.objects.WebEvent
-import spray.http.FormData
-
+import net.addictivesoftware.flow.objects.{WebEvent, EventObject}
+import spray.http.{FormData, HttpHeaders, HttpCookie}
+import HttpHeaders.`Set-Cookie` 
 
 //implicit marshallers/unmarshallers
 import spray.json.DefaultJsonProtocol._
+import net.addictivesoftware.flow.MyJsonProtocol._
+
 
 /**
  * Actor that recieves requests and executes the mixed-in route
@@ -22,25 +24,16 @@ class FlowService extends Actor with FlowRoutingService {
   def receive = runRoute(flowRoute)
 }
 
-  /**
-   * 
-   * Trait that contains the route to execute
-   */
+
+/**
+ * 
+ * Trait that contains the route to execute
+ */
 trait FlowRoutingService extends HttpService with WebPages with SprayJsonSupport with Logging {
   val eventActor = actorRefFactory.actorOf(Props[EventActor])
   val Ok = "Ok"
 
-  val flowRoute = 
-  pathPrefix("flow") {
-    path("index") {    // returns helphtml
-      get {
-        respondWithMediaType(`text/html`) {
-          complete {
-            index
-          }
-        }
-      }
-    } ~
+  val flowRoute = pathPrefix("flow") {
     path ("\\w+.html".r) {filename => // serve static html files
       get {
         respondWithMediaType(`text/html`) {
@@ -80,10 +73,26 @@ trait FlowRoutingService extends HttpService with WebPages with SprayJsonSupport
         }
       }
     } ~
-    path("getsession") {    //return a session id, TODO check/set cookie for id
+    path("getsession") {    
       get {
-        complete {
-          scala.Math.abs(new Random().nextLong()).toString()
+        optionalCookie("flow-session") {cookieOption =>
+          cookieOption match {
+            case Some(cookie) => {
+              respondWithHeader(`Set-Cookie`(cookie)) {
+                complete {
+                  cookie.content
+                }
+              }
+            }
+            case _ => {
+              val newCookie = new HttpCookie("flow-session", scala.Math.abs(new Random().nextLong()).toString())
+              respondWithHeader(`Set-Cookie`(newCookie)) {
+                complete {
+                  newCookie.content
+                }
+              }                
+            }
+          }
         }
       }
     } ~
@@ -96,7 +105,52 @@ trait FlowRoutingService extends HttpService with WebPages with SprayJsonSupport
           }
         }
       }
+    } ~
+    pathPrefix("api") {
+      pathPrefix("events") {
+        path("list") {
+          get {
+            respondWithMediaType(`application/json`) {
+              complete {
+                WebEvent.list()
+              }
+            }
+          }
+        } ~
+        path("list" / "session" / "\\w+".r) {session =>
+          get {
+            respondWithMediaType(`application/json`) {
+              complete {
+                WebEvent.list().filter(_.session == session)
+              }
+            }
+          }
+        } ~
+        path("single" / "\\w+".r ) {id =>
+          get {
+            respondWithMediaType(`application/json`) {
+              complete {
+                WebEvent.getById(id) match {
+                  case Some(eventObject:EventObject) => eventObject
+                  case _ => "EventObject not found"
+                }
+              }
+            }
+          }
+        } ~
+        path("single") {
+          put {
+            entity(as[EventObject]) {eventObject:EventObject =>
+              complete {
+                WebEvent.insert(eventObject) match {
+                  case Some(id) => id.toString
+                  case _ => "unable to add event"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
-

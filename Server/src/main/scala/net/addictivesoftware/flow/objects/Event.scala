@@ -6,7 +6,7 @@ import com.novus.salat._
 import com.novus.salat.global._
 import scala.Some
 
-case class WebEvent(
+case class EventObject (
   @Key("_id") _id:String = new ObjectId().toString,
   timestamp:Long = System.currentTimeMillis,
   session:String,
@@ -14,15 +14,15 @@ case class WebEvent(
   data:Map[String, String]
 )
 
-object WebEventDAO extends SalatDAO[WebEvent, Int](collection = MongoConnection()("flow-data")("events"))
+object WebEventDAO extends SalatDAO[EventObject, Int](collection = MongoConnection()("flow-data")("events"))
 
 object WebEvent {
 
-  def insert(event:WebEvent):Option[Int] = {
+  def insert(event:EventObject):Option[Int] = {
     WebEventDAO.insert(event)
   }
 
-  def delete(event:WebEvent) = {
+  def delete(event:EventObject) = {
     WebEventDAO.remove(event)
   }
 
@@ -33,18 +33,18 @@ object WebEvent {
     }
   }
 
-  def update(id: String, event:WebEvent) = {
-    WebEventDAO.update(MongoDBObject("_id" -> id), grater[WebEvent].asDBObject(event))
+  def update(id: String, event:EventObject) = {
+    WebEventDAO.update(MongoDBObject("_id" -> id), grater[EventObject].asDBObject(event))
   }
 
-  def getById(id:String):Option[WebEvent] = {
+  def getById(id:String):Option[EventObject] = {
     WebEventDAO.find(MongoDBObject("_id" -> id))
       .limit(1)
       .toList
       .headOption
   }
 
-  def list():List[WebEvent] = {
+  def list():List[EventObject] = {
     WebEventDAO.find(MongoDBObject()).toList
   }
 }
