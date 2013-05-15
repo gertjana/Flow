@@ -1,5 +1,5 @@
 var bindCss = ".record-flow";
-var endPoint = "http://devgertjana.global.sdl.corp:9999/flow";
+var endPoint = "http://perth:9999/flow";
 var session = "nosession";
 
 $(document).ready(function() {

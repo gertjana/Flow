@@ -1,12 +1,34 @@
 package net.addictivesoftware.flow
 
-/**
- * Created with IntelliJ IDEA.
- * User: gertjan
- * Date: 5/15/13
- * Time: 8:41 PM
- * To change this template use File | Settings | File Templates.
- */
+import java.util.Properties
+import java.io.IOException
+
+
 object FlowProperties {
+  val propFilename = "/flow.properties"
+
+  def getString(name:String): String = {
+    flowProps.getProperty(name)
+  }
+
+  def getInt(name:String): Int = {
+    flowProps.getProperty(name).toInt
+  }
+
+  protected lazy val flowProps: java.util.Properties = {
+    val props = new java.util.Properties
+    val stream = getClass.getResourceAsStream(propFilename)
+    if (stream ne null)
+      quietlyDispose(props.load(stream), stream.close)
+
+    props
+  }
+
+  private def quietlyDispose(action: => Unit, disposal: => Unit) =
+    try     { action }
+    finally {
+      try     { disposal }
+      catch   { case _: IOException => }
+    }
 
 }
