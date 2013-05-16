@@ -40,6 +40,8 @@ $(document).ready(function() {
 
 
     function handleGenericEvent(eventName, eventObject) {
+        if (console) console.log("EN:" + eventName);
+        
         var data = {
             url:                document.location.href,
             useragent:          navigator.userAgent,
@@ -57,6 +59,7 @@ $(document).ready(function() {
             }
         });
 
+        if (console) console.log("EN:" + eventName);
         $.ajax({
           type: "POST",
           url: endPoint + "/event/" + session + "/" + eventName,
