@@ -4,7 +4,3 @@
 # it could be python, php, ruby, etc.
 # $OPENSHIFT_INTERNAL_IP:$OPENSHIFT_INTERNAL_IP
 
-#replace IP + PORT in Server/src/main/resources/flow.properties
-cd $OPENSHIFT_REPO_DIR
-sed 's/application-host=.*/application-host=$OPENSHIFT_INTERNAL_IP/' Server/src/main/resources/flow.properties 
-sed 's/application-port=.*/application-port=$OPENSHIFT_INTERNAL_PORT/' Server/src/main/resources/flow.properties
