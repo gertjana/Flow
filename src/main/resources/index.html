@@ -5,9 +5,24 @@
       </head>
       <body>
         <h3>Flow: a "Non Blocking" webservice to record events:</h3>
+        <p>how to implement it
         <ul>
-          <li>Annotate html elements with the "record-flow" class to make them recordable</li>
-          <li>Add extra data by using data-* attributes</li>
+          <li>Add the following to your html:<br/>
+            <code>
+              <pre>
+  &lt;script src="http://code.jquery.com/jquery-1.9.1.js">&lt;/script>
+  &lt;script src="js/flow.js">&lt;/script>
+              </pre>
+            </code>
+          </li>
+          <li>Annotate html elements with the "record-flow-[event]" class to make them recordable<br/>
+          Add extra data by using data-* attributes
+            <code>
+              <pre>
+  &lt;input data-formfield="register-user-username" class="record-flow-focus record-flow-blur" type="text" />
+              </pre>
+            </code>
+          </li>
         </ul>
         <table border="1">
           <tr>
