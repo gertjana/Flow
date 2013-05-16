@@ -14,7 +14,7 @@ case class EventObject (
   data:Map[String, String]
 )
 
-object WebEventDAO extends SalatDAO[EventObject, Int](collection = MongoConnection()("flow-data")("events"))
+object WebEventDAO extends SalatDAO[EventObject, Int](collection = MongoConnection()("flow")("events"))
 
 object WebEvent {
 

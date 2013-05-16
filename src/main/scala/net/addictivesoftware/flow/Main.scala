@@ -10,12 +10,23 @@ object Main extends App with SprayCanHttpServerApp {
   //if we're on openshift take those values else from properties file
   val mongoHost       = Option(System.getenv("OPENSHIFT_MONGO_DB_HOST")) getOrElse FlowProperties.getString("mongo-host")
   val mongoPort       = Option(System.getenv("OPENSHIFT_MONGO_DB_PORT")) getOrElse FlowProperties.getString("mongo-port") toInt
+  val mongoUser       = Option(System.getenv("OPENSHIFT_MONGO_DB_USER")) getOrElse FlowProperties.getString("mongo-user")
+  val mongoPassword   = Option(System.getenv("OPENSHIFT_MONGO_DB_PASSWORD")) getOrElse FlowProperties.getString("mongo-password")
+
   val applicationHost = Option(System.getenv("OPENSHIFT_INTERNAL_IP"))   getOrElse FlowProperties.getString("application-host")
   val applicationPort = Option(System.getenv("OPENSHIFT_INTERNAL_PORT")) getOrElse FlowProperties.getString("application-port") toInt
 
 
+
   val mongo = MongoConnection(mongoHost, mongoPort)
 
+
+  if (!mongo.getDB("flow").authenticate(mongoUser, mongoPassword)) {
+    println("Could not authenticate on mongodb?")
+  } else {
+    println("Authenticated on MongoDB!")
+  }
+ 
   val flowHandler = system.actorOf(Props[FlowService])
   newHttpServer(flowHandler) ! Bind(interface = applicationHost, port = applicationPort)
 }
