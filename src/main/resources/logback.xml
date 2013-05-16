@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+    <!-- Properties -->
+    <property name="log.pattern" value="%date %-5level %logger - %message%n"/>
+    <property name="log.history" value="7"/>
+    <property name="log.folder" value="c:/tridion/log"/>
+    <property name="log.level" value="ERROR"/>
+
+    <!-- Appenders -->
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${log.pattern}</pattern>
+        </encoder>
+    </appender>
+
+
+    <logger name="net.addictivesoftware.flow" level="DEBUG">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+
+    <root level="OFF" />
+
+</configuration>

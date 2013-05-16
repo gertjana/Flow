@@ -1,0 +1,101 @@
+    <html>
+      <head>
+        <title>Flow - Index</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+      </head>
+      <body>
+        <h3>Flow: a "Non Blocking" webservice to record events:</h3>
+        <ul>
+          <li>Annotate html elements with the "record-flow" class to make them recordable</li>
+          <li>Add extra data by using data-* attributes</li>
+        </ul>
+        <table border="1">
+          <tr>
+            <th colspan="5">Html pages</th>
+          </tr>
+          <tr>
+            <th>What?</th>
+            <th>Method</th>
+            <th>Url</th>
+            <th>Description</th>
+            <th>Returns</th>
+          </tr>
+          <tr>
+            <td>This file</td>
+            <td>GET</td>
+            <td><a href="/flow/index">/flow/index</a></td>
+            <td></td>
+            <td>text/html</td>
+          </tr>
+          <tr>
+            <td>Get a session ID</td>
+            <td>GET</td>
+            <td><a href ="/flow/getsession">/flow/getsession</a></td>
+            <td><i>This is optional, it's fine to pass on the session id from the webserver</i></td>
+            <td>text/plain</td>
+         </tr>
+          <tr>
+            <td>Record an Event</td>
+            <td>POST</td>
+            <td><a href="/flow/event/[session]/[event-name]">/flow/event/[session]/[event-name]</a></td>
+            <td>post parameters will also be stored</td>
+            <td>text/html</td>
+          </tr>
+          <tr>
+            <td>List Events</td>
+            <td>GET</td>
+            <td><a href="/flow/list">/flow/list</a></td>
+            <td>List currently stored events</td>
+            <td>text/html</td>
+          </tr>
+          <tr>
+            <td>List Events</td>
+            <td>GET</td>
+            <td><a href="/flow/list/[session]">/flow/list/[session]</a></td>
+            <td>List currently stored events for a session</td>
+            <td>text/html</td>
+          </tr>
+          <tr>
+            <th colspan="5">JSON API</th>
+          </tr>
+          <tr>
+            <th>What?</th>
+            <th>Method</th>
+            <th>Url</th>
+            <th>Description</th>
+            <th>Returns</th>
+          </tr>
+          <tr>
+            <td>Record an Event</td>
+            <td>PUT</td>
+            <td><a href="/flow/api/events/single">/flow/api/events/single</a></td>
+            <td>json event in body</td>
+            <td>application/json</td>
+          </tr>
+          <tr>
+            <td>Get a single Event</td>
+            <td>GET</td>
+            <td><a href="/flow/api/events/single/[id]">/flow/api/events/single/[id]</a></td>
+            <td></td>
+            <td>application/json</td>
+          </tr>
+          <tr>
+            <td>List Events</td>
+            <td>GET</td>
+            <td><a href="/flow/api/events/list">/flow/api/events/list</a></td>
+            <td>List currently stored events</td>
+            <td>application/json</td>
+          </tr>
+          <tr>
+            <td>List Events</td>
+            <td>GET</td>
+            <td><a href="/flow/api/events/list/[session]">/flow/api/events/list/[session]</a></td>
+            <td>List currently stored events for a session</td>
+            <td>application/json</td>
+          </tr>
+        </table>
+
+        <p>A Test Html is available here: <a href="/flow/test.html">/flow/test.html</a></p>
+
+      </body>
+    </html>
