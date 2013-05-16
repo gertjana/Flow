@@ -1,10 +1,12 @@
 package net.addictivesoftware.flow.objects
+
 import com.novus.salat.annotations.raw.Key
 import com.novus.salat.dao.SalatDAO
 import com.mongodb.casbah.Imports._
 import com.novus.salat._
 import com.novus.salat.global._
 import scala.Some
+import net.addictivesoftware.flow.FlowMongoConnection
 
 case class EventObject (
   @Key("_id") _id:String = new ObjectId().toString,
@@ -14,7 +16,7 @@ case class EventObject (
   data:Map[String, String]
 )
 
-object WebEventDAO extends SalatDAO[EventObject, Int](collection = MongoConnection()("flow")("events"))
+object WebEventDAO extends SalatDAO[EventObject, Int](collection = FlowMongoConnection.flowCollection)
 
 object WebEvent {
 
