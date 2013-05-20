@@ -12,6 +12,6 @@ object FlowMongoConnection {
     if (authRequired) {
       db.authenticate(mongoUser, mongoPassword)
     }
-    db("events")
+    db("openshift")
   }
 }
