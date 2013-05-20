@@ -27,6 +27,7 @@ libraryDependencies ++= Seq(
     "com.novus" %% "salat-core" % "0.0.8-SNAPSHOT",
     "io.spray" % "spray-testkit" % "1.0-M7" % "test",
     "org.specs2" %% "specs2" % "1.9" % "test",
+    "com.typesafe.akka" % "akka-slf4j" % "2.0.3",
     "com.weiglewilczek.slf4s" %% "slf4s" % "1.0.7",
     "ch.qos.logback" % "logback-classic" % "0.9.27"
 )

@@ -3,7 +3,6 @@
     <!-- Properties -->
     <property name="log.pattern" value="%date %-5level %logger - %message%n"/>
     <property name="log.history" value="7"/>
-    <property name="log.folder" value="c:/tridion/log"/>
     <property name="log.level" value="ERROR"/>
 
     <!-- Appenders -->
@@ -13,12 +12,28 @@
             <pattern>${log.pattern}</pattern>
         </encoder>
     </appender>
-
+    
+    <appender name="R" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>logs/flow.log</File>
+    <encoder>
+        <pattern>%d{HH:mm:ss.SSS} [%thread] [%level] %message%n</pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+        <maxIndex>5</maxIndex>
+        <FileNamePattern>logs/flow.log.%i</FileNamePattern>
+    </rollingPolicy>
+    <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+        <MaxFileSize>1000KB</MaxFileSize>
+    </triggeringPolicy>
+  </appender>
 
     <logger name="net.addictivesoftware.flow" level="DEBUG">
         <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="R"/>
     </logger>
 
-    <root level="OFF" />
+    <root level="DEBUG">
+        <appender-ref ref="R" />
+    </root>
 
 </configuration>
