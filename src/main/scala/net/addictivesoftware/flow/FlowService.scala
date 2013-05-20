@@ -6,7 +6,7 @@ import spray.httpx.SprayJsonSupport
 import com.weiglewilczek.slf4s.Logging
 import scala.util.Random
 import spray.http.MediaTypes.{`text/html`, `application/javascript`, `text/css`, `application/json`}
-import net.addictivesoftware.flow.{WebPages, EventActor, RecordEvent}
+import net.addictivesoftware.flow.{FlowDirectives, WebPages, EventActor, RecordEvent}
 import net.addictivesoftware.flow.objects.{WebEvent, EventObject}
 import spray.http.{FormData, HttpHeaders, HttpCookie}
 import HttpHeaders.`Set-Cookie` 
@@ -29,7 +29,7 @@ class FlowService extends Actor with FlowRoutingService {
  * 
  * Trait that contains the route to execute
  */
-trait FlowRoutingService extends HttpService with WebPages with SprayJsonSupport with Logging {
+trait FlowRoutingService extends HttpService with WebPages with FlowDirectives with SprayJsonSupport with Logging {
   val eventActor = actorRefFactory.actorOf(Props[EventActor])
   val Ok = "Ok"
 
@@ -44,7 +44,8 @@ trait FlowRoutingService extends HttpService with WebPages with SprayJsonSupport
     path("js" / "[\\w\\.]+".r) { filename => // serve static javascript files
       get {
         respondWithMediaType(`application/javascript`) {
-          getFromResource("js/" + filename);
+          val file = getFromResourceAndReplacePlaceHolders("js/" + filename)
+          file
         }
       }
     } ~

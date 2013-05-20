@@ -1,5 +1,5 @@
 var bindCss = ".record-flow";
-var endPoint = "http://flow-gassies.rhcloud.com/flow";
+var endPoint = "http://${OPENSHIFT_APP_DNS}:9999/flow";
 var session = "nosession";
 
 $(document).ready(function() {
