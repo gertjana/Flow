@@ -13,7 +13,7 @@ project/plugins/project/
 .scala_dependencies
 
 #idea
-Client/.idea*
-Client/.idea
-Server/.idea*
-Server/.idea
+.idea*
+.idea
+.idea*
+.idea
