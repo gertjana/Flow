@@ -101,8 +101,13 @@ trait FlowRoutingService extends HttpService with WebPages with FlowDirectives w
       post {
         entity(as[FormData]) { formData:FormData =>
           complete {
-            eventActor ! RecordEvent(session, event, formData.fields)
-            Ok
+            //eventActor ! RecordEvent(session, event, formData.fields)
+            val eventObject = new EventObject(session=session, event=event, data=formData.fields)
+            WebEvent.insert(eventObject) match {
+              case Some(id) => id.toString
+              case None => "Error inserting Event"
+            }
+
           }
         }
       }
