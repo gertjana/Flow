@@ -16,11 +16,11 @@ case class EventObject (
   data:Map[String, String]
 )
 
-object WebEventDAO extends SalatDAO[EventObject, Int](collection = FlowMongoConnection.flowCollection)
+object WebEventDAO extends SalatDAO[EventObject, String](collection = FlowMongoConnection.flowCollection)
 
 object WebEvent {
 
-  def insert(event:EventObject):Option[Int] = {
+  def insert(event:EventObject):Option[String] = {
     WebEventDAO.insert(event)
   }
 

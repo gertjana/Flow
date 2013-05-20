@@ -103,12 +103,12 @@ trait FlowRoutingService extends HttpService with WebPages with FlowDirectives w
           complete {
             //eventActor ! RecordEvent(session, event, formData.fields)
             val eventObject = new EventObject(session=session, event=event, data=formData.fields)
-            WebEvent.insert(eventObject) match {
-              case Some(id) => 
-                logger.debug(id.toString)
-                id.toString
-              case None => 
-                logger.error(eventObject.toString)
+            WebEvent.insert(eventObject)  match {
+              case Some(id:String) =>
+                logger.debug("Inserted Event into database")
+                Ok
+              case _ => 
+                logger.error("Error inserting Event")
                 "Error inserting Event"
             }
 
