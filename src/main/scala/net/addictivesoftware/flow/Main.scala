@@ -14,7 +14,7 @@ object Main extends App with SprayCanHttpServerApp {
   }
   val applicationPort:Int    = url.contains(":") match {
     case true => url.split(":")(1) toInt
-    case _ => 80
+    case _ => FlowProperties.getEnvOrProp("OPENSHIFT_INTERNAL_PORT")
   }
 
   val flowHandler = system.actorOf(Props[FlowService])
