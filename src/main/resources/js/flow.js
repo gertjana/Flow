@@ -1,5 +1,5 @@
 var bindCss = ".record-flow";
-var endPoint = "http://${OPENSHIFT_APP_DNS}:9999/flow";
+var endPoint = "http://${OPENSHIFT_APP_DNS}:${OPENSHIFT_APP_PORT}/flow";
 var session = "nosession";
 
 $(document).ready(function() {

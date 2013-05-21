@@ -42,7 +42,7 @@ trait FlowDirectives {
 
   //replaces placeholders with Env var's
   def replaceEnvPlaceHolders(text: String) = {
-    "\\$\\{(\\w+)\\}".r.replaceAllIn(text, m => Option(System.getenv(m.group(1).toString)) getOrElse FlowProperties.getString("application-host"))
+    "\\$\\{(\\w+)\\}".r.replaceAllIn(text, m => Option(System.getenv(m.group(1).toString)) getOrElse FlowProperties.getString(m.group(1).toString))
 
   } 
 
