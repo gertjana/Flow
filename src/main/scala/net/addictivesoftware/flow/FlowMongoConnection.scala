@@ -3,11 +3,11 @@ package net.addictivesoftware.flow
 import com.mongodb.casbah.Imports._
 
 object FlowMongoConnection {
-  val mongoHost = Option(System.getenv("OPENSHIFT_MONGODB_DB_HOST")) getOrElse FlowProperties.getString("mongo-host")
-  val mongoPort = Option(System.getenv("OPENSHIFT_MONGODB_DB_PORT")) getOrElse FlowProperties.getString("mongo-port") toInt
-  val mongoUser       = Option(System.getenv("OPENSHIFT_MONGODB_DB_USER")) getOrElse FlowProperties.getString("mongo-user")
-  val mongoPassword   = Option(System.getenv("OPENSHIFT_MONGODB_DB_PASSWORD")) getOrElse FlowProperties.getString("mongo-password")
-  val authRequired:Boolean = true
+  val mongoHost             = FlowProperties.getEnvOrProp("OPENSHIFT_MONGODB_DB_HOST")
+  val mongoPort             = FlowProperties.getEnvOrProp("OPENSHIFT_MONGODB_DB_PORT") toInt
+  val mongoUser             = FlowProperties.getEnvOrProp("OPENSHIFT_MONGODB_DB_USER") 
+  val mongoPassword         = FlowProperties.getEnvOrProp("OPENSHIFT_MONGODB_DB_PASSWORD")
+  val authRequired:Boolean  = true
 
   def flowCollection = {
     val db = MongoConnection(mongoHost, mongoPort).getDB("flow")

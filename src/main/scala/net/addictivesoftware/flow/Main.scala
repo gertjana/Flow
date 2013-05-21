@@ -7,14 +7,15 @@ import net.addictivesotware.flow.FlowService
 
 
 object Main extends App with SprayCanHttpServerApp {
-  //if we're on openshift take those values else from properties file
-//  val mongoHost = Option(System.getenv("OPENSHIFT_MONGODB_DB_HOST")) getOrElse FlowProperties.getString("mongo-host")
-//  val mongoPort = Option(System.getenv("OPENSHIFT_MONGODB_DB_PORT")) getOrElse FlowProperties.getString("mongo-port") toInt
-
-// val mongo = MongoConnection(mongoHost, mongoPort)
-  
-  val applicationHost = Option(System.getenv("OPENSHIFT_INTERNAL_IP"))   getOrElse FlowProperties.getString("application-host")
-  val applicationPort = Option(System.getenv("OPENSHIFT_INTERNAL_PORT")) getOrElse FlowProperties.getString("application-port") toInt
+  val url:String = FlowProperties.getEnvOrProp("OPENSHIFT_APP_DNS")
+  val applicationHost:String    = url.contains(":") match {
+    case true => url.split(":")(0)
+    case _ => url
+  }
+  val applicationPort:Int    = url.contains(":") match {
+    case true => url.split(":")(1) toInt
+    case _ => 80
+  }
 
   val flowHandler = system.actorOf(Props[FlowService])
   newHttpServer(flowHandler) ! Bind(interface = applicationHost, port = applicationPort)

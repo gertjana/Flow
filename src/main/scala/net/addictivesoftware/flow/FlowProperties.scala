@@ -15,6 +15,11 @@ object FlowProperties {
     flowProps.getProperty(name).toInt
   }
 
+  def getEnvOrProp(name: String) : String = {
+    Option(System.getenv(name)) getOrElse getString(name)
+  }
+
+
   protected lazy val flowProps: java.util.Properties = {
     val props = new java.util.Properties
     val stream = getClass.getResourceAsStream(propFilename)
