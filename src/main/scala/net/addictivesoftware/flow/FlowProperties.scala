@@ -2,10 +2,13 @@ package net.addictivesoftware.flow
 
 import java.util.Properties
 import java.io.IOException
+import com.weiglewilczek.slf4s.Logging
 
 
-object FlowProperties {
-  val propFilename = "/flow.properties"
+object FlowProperties extends Logging {
+  var propFilename = "/flow.properties"
+  val hostName = Option(java.net.InetAddress.getLocalHost.getHostName)
+
 
   def getString(name:String): String = {
     flowProps.getProperty(name)
@@ -16,12 +19,27 @@ object FlowProperties {
   }
 
   def getEnvOrProp(name: String) : String = {
-    Option(System.getenv(name)) getOrElse getString(name)
+    Option(System.getenv(name)) match {
+      case Some(value) =>
+        println("getting " + name + " from env")
+        value
+      case _ =>
+        println("Env var " + name + " not found defaulting to property")
+        getString(name)
+    }
   }
 
 
   protected lazy val flowProps: java.util.Properties = {
     val props = new java.util.Properties
+
+    hostName match {
+      case Some(name) => propFilename = "/flow-" + name + ".properties"
+      case _ => {}
+    }
+
+    println("reading properties from " + propFilename)
+
     val stream = getClass.getResourceAsStream(propFilename)
     if (stream ne null)
       quietlyDispose(props.load(stream), stream.close)

@@ -7,13 +7,15 @@ object FlowMongoConnection {
   val mongoPort             = FlowProperties.getEnvOrProp("OPENSHIFT_MONGODB_DB_PORT") toInt
   val mongoUser             = FlowProperties.getEnvOrProp("OPENSHIFT_MONGODB_DB_USER") 
   val mongoPassword         = FlowProperties.getEnvOrProp("OPENSHIFT_MONGODB_DB_PASSWORD")
-  val authRequired:Boolean  = true
-
+  
   def flowCollection = {
     val db = MongoConnection(mongoHost, mongoPort).getDB("flow")
-    if (authRequired) {
+    try {
       db.authenticate(mongoUser, mongoPassword)
+    } catch {
+      case _ => {}//do nothing
     }
+
     db("events")
   }
 }
