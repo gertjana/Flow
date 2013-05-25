@@ -7,15 +7,8 @@ import net.addictivesotware.flow.FlowService
 
 
 object Main extends App with SprayCanHttpServerApp {
-  val url:String = FlowProperties.getEnvOrProp("OPENSHIFT_APP_DNS")
-  val applicationHost:String    = url.contains(":") match {
-    case true => url.split(":")(0)
-    case _ => url
-  }
-  val applicationPort:Int    = url.contains(":") match {
-    case true => url.split(":")(1) toInt
-    case _ => FlowProperties.getEnvOrProp("OPENSHIFT_INTERNAL_PORT")
-  }
+  val applicationHost:String = FlowProperties.getEnvOrProp("OPENSHIFT_APP_DNS")
+  val applicationPort:Int    = FlowProperties.getEnvOrProp("OPENSHIFT_INTERNAL_PORT") toInt
 
   val flowHandler = system.actorOf(Props[FlowService])
   newHttpServer(flowHandler) ! Bind(interface = applicationHost, port = applicationPort)

@@ -44,8 +44,7 @@ trait FlowRoutingService extends HttpService with WebPages with FlowDirectives w
     path("js" / "[\\w\\.]+".r) { filename => // serve static javascript files
       get {
         respondWithMediaType(`application/javascript`) {
-          val file = getFromResourceAndReplacePlaceHolders("js/" + filename)
-          file
+          getFromResourceAndReplacePlaceHolders("js/" + filename)
         }
       }
     } ~
@@ -101,8 +100,9 @@ trait FlowRoutingService extends HttpService with WebPages with FlowDirectives w
       post {
         entity(as[FormData]) { formData:FormData =>
           complete {
-            //eventActor ! RecordEvent(session, event, formData.fields)
-            val eventObject = new EventObject(session=session, event=event, data=formData.fields)
+            eventActor ! RecordEvent(session, event, formData.fields)
+            Ok
+/*            val eventObject = new EventObject(session=session, event=event, data=formData.fields)
             WebEvent.insert(eventObject)  match {
               case Some(id:String) =>
                 logger.debug("Inserted Event into database")
@@ -111,7 +111,7 @@ trait FlowRoutingService extends HttpService with WebPages with FlowDirectives w
                 logger.error("Error inserting Event")
                 "Error inserting Event"
             }
-
+*/
           }
         }
       }
@@ -122,9 +122,7 @@ trait FlowRoutingService extends HttpService with WebPages with FlowDirectives w
           get {
             respondWithMediaType(`application/json`) {
               complete {
-                val list = WebEvent.list()
-                logger.debug("listing " + list.size + " events")
-                list
+                WebEvent.list()
               }
             }
           }
@@ -155,8 +153,8 @@ trait FlowRoutingService extends HttpService with WebPages with FlowDirectives w
             entity(as[EventObject]) {eventObject:EventObject =>
               complete {
                 WebEvent.insert(eventObject) match {
-                  case Some(id) => id.toString
-                  case _ => "unable to add event"
+                  case Some(id) => id
+                  case _ => "Unable to add event"
                 }
               }
             }
