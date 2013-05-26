@@ -59,7 +59,7 @@ trait FlowRoutingService extends HttpService with WebPages with FlowDirectives w
       get {
         respondWithMediaType(`text/html`) {
           complete {
-            list(WebEvent.list())
+            listHtmlPage(WebEvent.list())
           }
         }
       }
@@ -68,7 +68,7 @@ trait FlowRoutingService extends HttpService with WebPages with FlowDirectives w
       get {
         respondWithMediaType(`text/html`) {
           complete {
-            list(WebEvent.list().filter(_.session == session))
+            listHtmlPage(WebEvent.list().filter(_.session == session))
           }
         }
       }

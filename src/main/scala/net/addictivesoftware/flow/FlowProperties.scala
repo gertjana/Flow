@@ -7,7 +7,7 @@ import com.weiglewilczek.slf4s.Logging
 
 object FlowProperties extends Logging {
   var propFilename = "/flow.properties"
-  val hostName = Option(java.net.InetAddress.getLocalHost.getHostName)
+  val hostName = Option(java.net.InetAddress.getLocalHost().getHostName)
 
 
   def getString(name:String): String = {
@@ -21,10 +21,8 @@ object FlowProperties extends Logging {
   def getEnvOrProp(name: String) : String = {
     Option(System.getenv(name)) match {
       case Some(value) =>
-        println("getting " + name + " from env")
         value
       case _ =>
-        println("Env var " + name + " not found defaulting to property")
         getString(name)
     }
   }
@@ -37,8 +35,6 @@ object FlowProperties extends Logging {
       case Some(name) => propFilename = "/flow-" + name + ".properties"
       case _ => {}
     }
-
-    println("reading properties from " + propFilename)
 
     val stream = getClass.getResourceAsStream(propFilename)
     if (stream ne null)

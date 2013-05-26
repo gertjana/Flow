@@ -10,7 +10,7 @@ trait WebPages {
   /**
    * Lists events
    */
-  def list(events:List[EventObject]) =
+  def listHtmlPage(events:List[EventObject]) =
     <html>
       <head>
         <title>Flow - List Events</title>
