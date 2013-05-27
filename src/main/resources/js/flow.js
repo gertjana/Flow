@@ -12,7 +12,7 @@ $(document).ready(function() {
            session = data;
         },
         error: function(response, status, error) {
-            alert(status+": "+error);
+            if (console) console.log(status+": "+error);
         }
     });
 
@@ -40,7 +40,6 @@ $(document).ready(function() {
 
 
     function handleGenericEvent(eventName, eventObject) {
-        if (console) console.log("EN:" + eventName);
         
         var data = {
             url:                document.location.href,
@@ -59,7 +58,6 @@ $(document).ready(function() {
             }
         });
 
-        if (console) console.log("EN:" + eventName);
         $.ajax({
           type: "POST",
           url: endPoint + "/event/" + session + "/" + eventName,
@@ -68,7 +66,7 @@ $(document).ready(function() {
             if (console) console.log(data);
           },
           error: function(response, status, error) {
-            alert(status+": "+error);
+            if (console) console.log(status+": "+error);
           }
         });
 
