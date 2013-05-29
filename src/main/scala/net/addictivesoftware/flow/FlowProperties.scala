@@ -4,8 +4,7 @@ import java.util.Properties
 import java.io.IOException
 import com.weiglewilczek.slf4s.Logging
 
-
-object FlowProperties extends Logging {
+object FlowProperties extends Logging with Utilities {
   var propFilename = "/flow.properties"
   val hostName = Option(java.net.InetAddress.getLocalHost().getHostName)
 
@@ -29,25 +28,16 @@ object FlowProperties extends Logging {
 
 
   protected lazy val flowProps: java.util.Properties = {
-    val props = new java.util.Properties
+    val properties = new java.util.Properties
 
     hostName match {
       case Some(name) => propFilename = "/flow-" + name + ".properties"
       case _ => {}
     }
 
-    val stream = getClass.getResourceAsStream(propFilename)
-    if (stream ne null)
-      quietlyDispose(props.load(stream), stream.close)
-
-    props
-  }
-
-  private def quietlyDispose(action: => Unit, disposal: => Unit) =
-    try     { action }
-    finally {
-      try     { disposal }
-      catch   { case _: IOException => }
+    using( getClass.getResourceAsStream(propFilename) ) {stream => 
+      properties.load(stream)
     }
-
+    properties
+  }
 }
