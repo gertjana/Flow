@@ -1,0 +1,10 @@
+#!/bin/bash
+# The logic to start up your application should be put in this
+# script. The application will work only if it binds to
+# $OPENSHIFT_INTERNAL_IP:8080
+SBT_PATH=$OPENSHIFT_DATA_DIR/sbt
+SBT_DIR=$OPENSHIFT_DATA_DIR
+IVY_DIR=$OPENSHIFT_DATA_DIR/.ivy
+
+cd $OPENSHIFT_REPO_DIR
+$SBT_PATH/bin/sbt -sbt-dir $SBT_DIR -ivy $IVY_DIR -mem 256 console
