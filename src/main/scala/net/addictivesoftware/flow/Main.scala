@@ -7,7 +7,7 @@ import net.addictivesotware.flow.FlowService
 
 
 object Main extends App with SprayCanHttpServerApp {
-  val applicationHost:String = FlowProperties.getEnvOrProp("OPENSHIFT_APP_DNS")
+  val applicationHost:String = FlowProperties.getEnvOrProp("OPENSHIFT_INTERNAL_IP")
   val applicationPort:Int    = FlowProperties.getEnvOrProp("OPENSHIFT_INTERNAL_PORT") toInt
 
   val flowHandler = system.actorOf(Props[FlowService])
