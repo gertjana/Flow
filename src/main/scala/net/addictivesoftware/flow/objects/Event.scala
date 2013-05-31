@@ -16,7 +16,7 @@ case class EventObject (
   data:Map[String, String]
 )
 
-object WebEventDAO extends SalatDAO[EventObject, String](collection = FlowMongoConnection.flowCollection)
+object WebEventDAO extends SalatDAO[EventObject, String](collection = FlowMongoConnection.getEventsCollection)
 
 object WebEvent {
 

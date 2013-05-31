@@ -27,7 +27,7 @@ object FlowProperties extends Logging with Utilities {
   }
 
 
-  lazy val flowProperties: java.util.Properties = {
+ lazy val flowProperties: java.util.Properties = {
     val properties = new java.util.Properties
 
     hostName match {
