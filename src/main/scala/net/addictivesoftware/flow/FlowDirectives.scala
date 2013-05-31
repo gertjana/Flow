@@ -17,6 +17,8 @@ import spray.http.HttpHeaders.`Last-Modified`
 import spray.http.DateTime
 
 trait FlowDirectives {
+  val pattern = "\\$\\{(\\w+)\\}".r  // matches foo in ${foo}
+
   def getFromResourceAndReplacePlaceHolders(resourceName: String)
                      (implicit resolver: ContentTypeResolver, refFactory: ActorRefFactory): Route = {
 
@@ -42,7 +44,7 @@ trait FlowDirectives {
 
   //replaces placeholders with Env var's
   def replaceEnvPlaceHolders(text: String) = {
-    "\\$\\{(\\w+)\\}".r.replaceAllIn(text, m => FlowProperties.getEnvOrProp(m.group(1).toString))
+    pattern.replaceAllIn(text, m => FlowProperties.getEnvOrProp(m.group(1).toString))
 
   } 
 

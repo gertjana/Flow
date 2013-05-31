@@ -58,13 +58,6 @@ class FlowServiceSpec extends Specification with Specs2RouteTest with FlowRoutin
   		}
   	}
 
-  	"api call should return json" in {
-  		Get("/flow/api/events/list") ~> flowRoute ~> check {
-  			status mustEqual OK
-  			contentType.mediaType mustEqual `application/json`
-  		}
-  	}
-
   	"posting an event should result in an OK" in {
   		Post("/flow/event/1337/click") ~> flowRoute ~> check {
   			status mustEqual OK
@@ -72,12 +65,20 @@ class FlowServiceSpec extends Specification with Specs2RouteTest with FlowRoutin
 
   		}
   	}
-
+    
+    // api
   	"getting a list for this session id should result in a list of EventObjects" in {
   		Get("/flow/api/events/list/session/1337") ~> flowRoute ~> check {
   			entityAs[List[EventObject]].size !== null
   		}
   	} 
+
+    "api call should return json" in {
+      Get("/flow/api/events/list") ~> flowRoute ~> check {
+        status mustEqual OK
+        contentType.mediaType mustEqual `application/json`
+      }
+    }
   }
 }
 

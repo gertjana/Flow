@@ -10,11 +10,11 @@ object FlowProperties extends Logging with Utilities {
 
 
   def getString(name:String): String = {
-    flowProps.getProperty(name)
+    flowProperties.getProperty(name)
   }
 
   def getInt(name:String): Int = {
-    flowProps.getProperty(name).toInt
+    flowProperties.getProperty(name).toInt
   }
 
   def getEnvOrProp(name: String) : String = {
@@ -27,7 +27,7 @@ object FlowProperties extends Logging with Utilities {
   }
 
 
-  protected lazy val flowProps: java.util.Properties = {
+  lazy val flowProperties: java.util.Properties = {
     val properties = new java.util.Properties
 
     hostName match {

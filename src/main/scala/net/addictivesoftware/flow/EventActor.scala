@@ -4,7 +4,8 @@ import akka.actor.Actor
 import com.weiglewilczek.slf4s.Logging
 import net.addictivesoftware.flow.objects.{EventObject, WebEvent}
 
-case class RecordEvent(session:String, event:String, data:Map[String, String])
+sealed trait EventMessages
+case class RecordEvent(session:String, event:String, data:Map[String, String]) extends EventMessages
 
 class EventActor extends Actor with Logging {
   def receive = {
