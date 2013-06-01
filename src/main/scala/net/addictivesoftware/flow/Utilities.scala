@@ -6,7 +6,7 @@ trait Utilities {
   
   def using[A, B <: Closable] (closeable: B) (f: B => A): A =
     try {
-      f(closeable)
+      f(closeable) 
     } finally {
       try {
         closeable.close()

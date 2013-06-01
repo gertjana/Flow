@@ -31,13 +31,25 @@ object FlowProperties extends Logging with Utilities {
     val properties = new java.util.Properties
 
     hostName match {
-      case Some(name) => propFilename = "/flow-" + name + ".properties"
+      case Some(name) => propFilename = "/flow-" + name.toLowerCase + ".properties"
       case _ => {}
     }
-
+    var fileExists:Boolean = false;
     using( getClass.getResourceAsStream(propFilename) ) {stream => 
-      properties.load(stream)
+      try {
+        properties.load(stream)
+        fileExists = true;
+      } catch {
+        case _: Throwable => {
+        }
+      }
     }
+    if (!fileExists) {
+      using( getClass.getResourceAsStream("/flow.properties") ) {stream => 
+        properties.load(stream)
+      }      
+    }
+
     properties
   }
 }
