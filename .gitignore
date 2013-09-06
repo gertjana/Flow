@@ -15,5 +15,4 @@ project/plugins/project/
 #idea
 .idea*
 .idea
-.idea*
-.idea
+.idea/
