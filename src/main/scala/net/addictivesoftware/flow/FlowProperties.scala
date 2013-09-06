@@ -35,15 +35,12 @@ object FlowProperties extends Logging with Utilities {
       case _ => {}
     }
     var fileExists:Boolean = false;
-    using( getClass.getResourceAsStream(propFilename) ) {stream => 
-      try {
-        properties.load(stream)
-        fileExists = true;
-      } catch {
-        case _: Throwable => {
-        }
-      }
+
+    using( getClass.getResourceAsStream(propFilename) ) {stream =>
+      properties.load(stream)
+      fileExists = true;
     }
+
     if (!fileExists) {
       using( getClass.getResourceAsStream("/flow.properties") ) {stream => 
         properties.load(stream)
