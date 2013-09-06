@@ -38,9 +38,10 @@ trait FlowDirectives {
       }
     } else reject // don't serve the content of resource "directories"
   }
+
+  //adds last modified header
   def respondWithLastModifiedHeader1(timestamp: Long): Directive0 =
     respondWithHeader(`Last-Modified`(DateTime(math.min(timestamp, System.currentTimeMillis))))
-
 
   //replaces placeholders with Env var's
   def replaceEnvPlaceHolders(text: String) = {
