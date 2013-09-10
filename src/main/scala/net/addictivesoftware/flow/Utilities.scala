@@ -14,8 +14,6 @@ trait Utilities {
         case _: Throwable => //swallow
       }
     }
-
-    
 }
 
 object Utilities extends Utilities

@@ -1,11 +1,15 @@
 package net.addictivesoftware.flow
 
 import net.addictivesoftware.flow.objects.EventObject
+import java.util.Date
+import java.text.SimpleDateFormat
 
 /**
  * Trait that contains the (static) webpages
  */
 trait WebPages {
+  private val dateFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss:SSS z")
+
 
   /**
    * Lists events
@@ -30,7 +34,17 @@ trait WebPages {
           events.map(
             event => {
               <tr>
-                <td>{event.timestamp}</td>
+                <td>{
+                  Option(new Date(event.timestamp)) match {
+                    case Some(date:Date) => {
+                      dateFormat.format(date)
+                    }
+                    case _ => {
+                      "Illegal date: " + event.timestamp
+                    }
+                  }
+
+                  }</td>
                 <td>{event._id}</td>
                 <td>{event.session}</td>
                 <td>{event.event}</td>

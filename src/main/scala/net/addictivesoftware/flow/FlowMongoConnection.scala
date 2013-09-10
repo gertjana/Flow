@@ -13,7 +13,7 @@ object FlowMongoConnection {
     try {
       db.authenticate(mongoUser, mongoPassword)
     } catch {
-      case _ => {}
+      case _:MongoException => {} // ignoring authentication exception when authentication is turned off on the mongodb server
     }
 
     db("events")
