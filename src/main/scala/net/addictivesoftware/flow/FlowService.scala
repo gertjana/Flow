@@ -26,7 +26,6 @@ class FlowService extends Actor with FlowRoutingService {
 
 
 /**
- * 
  * Trait that contains the route to execute
  */
 trait FlowRoutingService extends HttpService with WebPages with FlowDirectives with SprayJsonSupport with Logging {
@@ -85,7 +84,7 @@ trait FlowRoutingService extends HttpService with WebPages with FlowDirectives w
               }
             }
             case _ => {
-              val newCookie = new HttpCookie("flow-session", scala.Math.abs(new Random().nextLong()).toString())
+              val newCookie = new HttpCookie("flow-session", scala.math.abs(new Random().nextLong()).toString())
               respondWithHeader(`Set-Cookie`(newCookie)) {
                 complete {
                   newCookie.content
@@ -96,22 +95,12 @@ trait FlowRoutingService extends HttpService with WebPages with FlowDirectives w
         }
       }
     } ~
-    path("event" / "\\w+".r / "\\w+".r) { (session:String, event:String) =>     //records event
+    path("event" / "\\w+".r / "\\w+".r) { (session:String, event:String) =>
       post {
         entity(as[FormData]) { formData:FormData =>
           complete {
             eventActor ! RecordEvent(session, event, formData.fields)
             Ok
-/*            val eventObject = new EventObject(session=session, event=event, data=formData.fields)
-            WebEvent.insert(eventObject)  match {
-              case Some(id:String) =>
-                logger.debug("Inserted Event into database")
-                Ok
-              case _ => 
-                logger.error("Error inserting Event")
-                "Error inserting Event"
-            }
-*/
           }
         }
       }

@@ -13,7 +13,7 @@ object FlowProperties extends Logging with Utilities {
     flowProperties.getProperty(name)
   }
 
-  def getInt(name:String): Int = {
+    def getInt(name:String): Int = {
     flowProperties.getProperty(name).toInt
   }
 
